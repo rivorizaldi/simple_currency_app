@@ -1,0 +1,18 @@
+.inputCurrency {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.currencyOptions {
+  width: 300px;
+}
+
+.inputCurrency button {
+  padding: 8px;
+}
+
+/* .Select-menu-outer {
+  top: auto;
+  bottom: 100%;
+} */

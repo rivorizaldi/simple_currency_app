@@ -1,0 +1,30 @@
+.headerCurrency {
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.titleCurrency {
+  font-style: italic;
+  font-size: 0.8rem;
+}
+
+.baseCurrency {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.baseCurrency p {
+  font-weight: bold;
+}
+
+.baseCurrency input {
+  padding-left: 6px;
+}
+
+.baseValue {
+  width: 150px;
+}
