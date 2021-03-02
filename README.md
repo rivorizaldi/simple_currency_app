@@ -34,7 +34,7 @@ $ npm install
 $ npm start
 ```
 
-3. Buka browser akses localhost 
+3. Buka browser akses localhost dengan port 3000
 ```bash
 localhost:3000
 ```
@@ -44,17 +44,17 @@ Menggunakan Docker :
 1. Build Docker Image
 
 ```bash
-$ docker build -t simple_currency_app:dev .
+$ docker build -f Dockerfile.prod -t simple_currency_app:prod .
 ```
 
 2. Run docker container
 
 ```bash
-$ docker run -it --rm -v ${PWD}:/app -v /app/node_modules -p 3001:3000 -e CHOKIDAR_USEPOLLING=true simple_currency_app:dev
+$ docker run -it --rm -p 1337:80 simple_currency_app:prod
 ```
 
-3. Buka browser akses localhost 
+3. Buka browser akses localhost dengan port 1337
 ```bash
-localhost:3001
+http://localhost:1337/
 ```
 
